@@ -5,7 +5,7 @@ node {
       echo 'Running grrovy code to parse json:.'
        sh 'pwd'
 jsonParser = new com.data.JSONFileReader()
-        result = jsonParser.readJSONTreeData("jsondata.txt")
+        result = jsonParser.readJSONTreeData("jsondata.json")
   println result
          
     }
