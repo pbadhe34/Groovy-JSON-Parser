@@ -6,7 +6,9 @@ pipeline {
             steps {
                 echo 'Running grrovy code to parse json:.'
                 sh 'pwd'
-                //echo GroovySystem.version
+                jsonParser = new JSONFileReader()
+        result = jsonParser.readJSONTreeData("jsondata.txt")
+  println result
             }
         }
         stage('Test') {
