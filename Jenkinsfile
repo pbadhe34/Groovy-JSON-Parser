@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Running grrovy code to parse json:.'
                 sh 'pwd'
-                jsonParser = new JSONFileReader()
+                jsonParser = new com.data.JSONFileReader()
         result = jsonParser.readJSONTreeData("jsondata.txt")
   println result
             }
