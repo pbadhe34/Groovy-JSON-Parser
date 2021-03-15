@@ -1,4 +1,5 @@
-  node {
+@Library('My-Shared-Lib') _  
+node {
      
     stage('Parser') {        
       echo 'Running grrovy code to parse json:.'
